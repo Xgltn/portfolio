@@ -265,21 +265,22 @@ body {
 
 
 
-
 .btn {
-  background-color: #00bfff;
+  background: linear-gradient(145deg, #00bfff, #0080ff);
   color: white;
-  padding: 12px 24px;
+  padding: 12px 28px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.6);
+  transition: 0.3s ease;
   display: inline-block;
-  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #007acc;
+  background: #007acc;
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.8);
 }
 
 
