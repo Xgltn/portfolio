@@ -17,7 +17,6 @@ window.addEventListener('scroll', revealOnScroll);
 // Pokreni odmah ako je nešto već vidljivo
 revealOnScroll();
 
-// Scroll to top button
 const scrollBtn = document.getElementById("scrollTopBtn");
 
 window.onscroll = function () {
@@ -33,4 +32,6 @@ scrollBtn.addEventListener("click", function () {
     top: 0,
     behavior: "smooth"
   });
+});
+
 });
