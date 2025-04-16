@@ -126,3 +126,29 @@ h2 {
   line-height: 1.6;
 }
 
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1 1 300px;
+  padding: 5px 10px;
+}
+
+
