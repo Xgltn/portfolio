@@ -1,4 +1,5 @@
-const display = document.getElementById('display');
+const displayCurrent = document.getElementById('current');
+const displayPrevious = document.getElementById('previous');
 const buttons = document.querySelectorAll('.btn');
 
 let currentInput = '';
@@ -13,11 +14,13 @@ buttons.forEach(button => {
       currentInput = '';
       previousInput = '';
       operator = '';
-      display.innerText = '0';
+      displayCurrent.innerText = '0';
+      displayPrevious.innerText = '';
     } else if (value === '=') {
       if (previousInput && currentInput && operator) {
         const result = eval(`${previousInput}${operator}${currentInput}`);
-        display.innerText = result;
+        displayCurrent.innerText = result;
+        displayPrevious.innerText = '';
         currentInput = result;
         previousInput = '';
         operator = '';
@@ -26,11 +29,13 @@ buttons.forEach(button => {
       if (currentInput) {
         operator = value;
         previousInput = currentInput;
+        displayPrevious.innerText = `${previousInput} ${operator}`;
         currentInput = '';
+        displayCurrent.innerText = '0';
       }
     } else {
       currentInput += value;
-      display.innerText = currentInput;
+      displayCurrent.innerText = currentInput;
     }
   });
 });
