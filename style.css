@@ -303,49 +303,69 @@ body {
 
 
 #skills {
-  padding: 60px 20px;
-  background-color: #0a0a0a;
-  color: white;
+  padding: 80px 20px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(10, 10, 10, 0.95));
+  backdrop-filter: blur(4px);
+  color: #fff;
   text-align: center;
+  border-top: 2px solid #00bfff40;
+  border-bottom: 2px solid #00bfff40;
 }
 
 #skills h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
   color: #00bfff;
-  text-shadow: 0 0 10px #00bfff;
+  text-shadow: 0 0 15px #00bfff;
 }
 
 .skill {
-  margin: 20px auto;
-  max-width: 500px;
+  margin: 25px auto;
+  max-width: 600px;
   text-align: left;
 }
 
 .skill span {
-  font-weight: bold;
+  font-weight: 600;
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
+  color: #cccccc;
 }
 
 .bar {
-  background-color: #222;
-  border-radius: 20px;
+  background-color: #1c1c1c;
+  border-radius: 30px;
   overflow: hidden;
-  height: 20px;
+  height: 22px;
   box-shadow: inset 0 0 5px #000;
+  position: relative;
 }
 
 .fill {
   height: 100%;
-  border-radius: 20px;
+  border-radius: 30px;
   background: linear-gradient(90deg, #00bfff, #0080ff);
-  box-shadow: 0 0 10px #00bfff;
+  box-shadow: 0 0 20px #00bfff88;
   transition: width 1.5s ease-in-out;
+  position: relative;
+  z-index: 2;
 }
 
-/* Individual bar widths */
+/* Bonus glowing border */
+.bar::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #00bfff55, #0080ff55);
+  z-index: 1;
+  filter: blur(8px);
+}
+
+/* Skill levels */
 .html { width: 90%; }
 .css { width: 80%; }
 .js { width: 70%; }
-
