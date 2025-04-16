@@ -266,27 +266,20 @@ body {
 
 
 
-.cv-download {
-  text-align: center;
-  margin: 3rem 0;
-}
-
-.cv-btn {
-  background-color: #00aaff;
+.btn {
+  background-color: #00bfff;
   color: white;
-  padding: 0.8rem 2rem;
+  padding: 12px 24px;
+  border: none;
   border-radius: 8px;
-  font-weight: bold;
   text-decoration: none;
-  font-size: 1rem;
-  box-shadow: 0 0 10px #00aaff80;
-  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease;
 }
 
-.cv-btn:hover {
-  background-color: #0077cc;
-  transform: translateY(-2px);
+.btn:hover {
+  background-color: #007acc;
 }
-
 
 
