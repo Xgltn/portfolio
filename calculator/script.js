@@ -39,4 +39,3 @@ buttons.forEach(button => {
     }
   });
 });
- 
