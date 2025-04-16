@@ -265,6 +265,13 @@ body {
 
 
 
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 .btn {
   background: linear-gradient(145deg, #00bfff, #0080ff);
   color: white;
