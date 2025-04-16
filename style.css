@@ -178,3 +178,16 @@ body {
   flex: 1 1 300px;
   padding: 5px 10px;
 }
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
