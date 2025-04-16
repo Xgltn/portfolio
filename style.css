@@ -223,4 +223,42 @@ body {
   100% { box-shadow: 0 0 10px rgba(0, 191, 255, 0.3); }
 }
 
+.certificates {
+  padding: 4rem 2rem;
+  background-color: #1a1a1a;
+  color: white;
+  text-align: center;
+}
+
+.certificates h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00aaff;
+  text-shadow: 0 0 10px #00aaff70;
+}
+
+.certificate-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.certificate-card {
+  background-color: #2b2b2b;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 280px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #00aaff60;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #00aaff70;
+}
+
+
 
