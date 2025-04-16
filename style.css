@@ -171,34 +171,6 @@ body {
   padding: 5px 10px;
 }
 
-/* LIGHT MODE */
-.light-mode {
-  background-color: #f8f9fa;
-  color: #333;
-}
 
-.light-mode .about,
-.light-mode .footer,
-.light-mode .project {
-  background-color: #ffffff;
-  color: #333;
-}
-
-.light-mode .footer {
-  border-top: 1px solid #ccc;
-}
-
-.light-mode .project a {
-  background-color: #2c7a7b;
-  color: white;
-}
-
-.light-mode .project a:hover {
-  background-color: #23696a;
-}
-
-.light-mode a {
-  color: #2c7a7b;
-}
 
 
