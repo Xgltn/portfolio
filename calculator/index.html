@@ -8,7 +8,10 @@
 </head>
 <body>
   <div class="calculator">
-    <div class="display" id="display">0</div>
+    <div class="display">
+      <div id="previous" class="previous-display"></div>
+      <div id="current" class="current-display">0</div>
+    </div>
     <div class="buttons">
       <button class="btn" data-value="7">7</button>
       <button class="btn" data-value="8">8</button>
@@ -31,7 +34,6 @@
       <button class="btn operator" data-value="+">+</button>
     </div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
