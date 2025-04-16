@@ -270,6 +270,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -283,7 +284,6 @@ body {
   box-shadow: 0 0 15px rgba(0, 191, 255, 0.6);
   transition: 0.3s ease;
   display: inline-block;
-  padding-bottom: 10px;
 }
 
 .btn:hover {
