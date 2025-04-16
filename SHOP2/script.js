@@ -1,8 +1,6 @@
 const toggle = document.getElementById('menu-toggle');
-const menu = document.getElementById('menu');
-const sidebar = document.querySelector('.sidebar');
+const navLinks = document.getElementById('nav-links');
 
 toggle.addEventListener('click', () => {
-  sidebar.classList.toggle('open');
+  navLinks.classList.toggle('open');
 });
- 
