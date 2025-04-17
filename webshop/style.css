@@ -1,0 +1,148 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #0f1117;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background-color: #0a0c12;
+  border-bottom: 1px solid #1f2937;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #3b82f6;
+}
+
+/* Hero */
+.hero {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #0f1117, #1e293b);
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #3b82f6;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2563eb;
+}
+
+/* Product Section */
+.product-section {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product-section h2 {
+  text-align: center;
+  color: #3b82f6;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+}
+
+.product-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.product-card {
+  background-color: #1e293b;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info {
+  padding: 1.2rem;
+}
+
+.info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+/* About & Contact */
+.about, .contact {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: white;
+  color: #0f1117;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0a0c12;
+  color: #94a3b8;
+}
