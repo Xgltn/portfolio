@@ -146,3 +146,52 @@ footer {
   background-color: #0a0c12;
   color: #94a3b8;
 }
+
+/* === MOBILE OPTIMIZATION === */
+@media (max-width: 768px) {
+  header {
+    padding: 40px 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .product-card {
+    padding: 20px;
+  }
+
+  .product-card img {
+    height: 180px;
+  }
+
+  .product-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .product-card p {
+    font-size: 0.95rem;
+  }
+
+  .product-card .price {
+    font-size: 1rem;
+  }
+
+  .product-card button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+
+  footer {
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
